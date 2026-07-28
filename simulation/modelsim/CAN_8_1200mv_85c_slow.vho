@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version"
 
--- DATE "07/28/2026 16:36:32"
+-- DATE "07/20/2026 15:35:07"
 
 -- 
 -- Device: Altera EP4CE6F17C8 Package FBGA256
@@ -36,9 +36,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	fpga_top IS
     PORT (
 	CLK50M : IN std_logic;
-	UART_TX : BUFFER std_logic;
+	UART_TX : OUT std_logic;
 	CAN_RX : IN std_logic;
-	CAN_TX : BUFFER std_logic
+	CAN_TX : OUT std_logic
 	);
 END fpga_top;
 
@@ -1954,16 +1954,6 @@ SIGNAL \u_can_top|u_can_level_packet|u_can_level_bit|can_tx~4_combout\ : std_log
 SIGNAL \u_can_top|u_can_level_packet|u_can_level_bit|can_tx~5_combout\ : std_logic;
 SIGNAL \u_can_top|u_can_level_packet|u_can_level_bit|can_tx~7_combout\ : std_logic;
 SIGNAL \u_can_top|u_can_level_packet|u_can_level_bit|can_tx~q\ : std_logic;
-SIGNAL \u_uart_tx|wptr_d2\ : std_logic_vector(10 DOWNTO 0);
-SIGNAL \u_uart_tx|wptr_d1\ : std_logic_vector(10 DOWNTO 0);
-SIGNAL \u_uart_tx|wptr\ : std_logic_vector(10 DOWNTO 0);
-SIGNAL \u_uart_tx|txcnt\ : std_logic_vector(31 DOWNTO 0);
-SIGNAL \u_uart_tx|txbits\ : std_logic_vector(9 DOWNTO 0);
-SIGNAL \u_uart_tx|state\ : std_logic_vector(1 DOWNTO 0);
-SIGNAL \u_uart_tx|rptr\ : std_logic_vector(10 DOWNTO 0);
-SIGNAL \u_uart_tx|keep\ : std_logic_vector(0 DOWNTO 0);
-SIGNAL \u_uart_tx|data\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \u_uart_tx|cycle\ : std_logic_vector(31 DOWNTO 0);
 SIGNAL rstn_shift : std_logic_vector(2 DOWNTO 0);
 SIGNAL can_tx_data : std_logic_vector(63 DOWNTO 0);
 SIGNAL can_tx_cnt : std_logic_vector(63 DOWNTO 0);
@@ -1990,6 +1980,16 @@ SIGNAL \u_can_top|u_can_level_packet|rx_data\ : std_logic_vector(63 DOWNTO 0);
 SIGNAL \u_can_top|u_can_level_packet|u_can_level_bit|adjust_c_PBS1\ : std_logic_vector(16 DOWNTO 0);
 SIGNAL \u_can_top|u_can_level_packet|tx_crc\ : std_logic_vector(14 DOWNTO 0);
 SIGNAL \u_can_top|u_can_level_packet|rx_crc_next\ : std_logic_vector(14 DOWNTO 0);
+SIGNAL \u_uart_tx|wptr_d2\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \u_uart_tx|wptr_d1\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \u_uart_tx|wptr\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \u_uart_tx|txcnt\ : std_logic_vector(31 DOWNTO 0);
+SIGNAL \u_uart_tx|txbits\ : std_logic_vector(9 DOWNTO 0);
+SIGNAL \u_uart_tx|state\ : std_logic_vector(1 DOWNTO 0);
+SIGNAL \u_uart_tx|rptr\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \u_uart_tx|keep\ : std_logic_vector(0 DOWNTO 0);
+SIGNAL \u_uart_tx|data\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \u_uart_tx|cycle\ : std_logic_vector(31 DOWNTO 0);
 SIGNAL \u_can_top|u_can_level_packet|ALT_INV_stat.RX_CRC~q\ : std_logic;
 SIGNAL \u_can_top|u_can_level_packet|u_can_level_bit|ALT_INV_req~q\ : std_logic;
 SIGNAL \u_uart_tx|ALT_INV_state\ : std_logic_vector(1 DOWNTO 1);

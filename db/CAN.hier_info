@@ -1,8 +1,8 @@
 |fpga_top
 CLK50M => clk.IN2
-UART_TX << uart_tx:u_uart_tx.o_uart_tx
+UART_TX <= uart_tx:u_uart_tx.o_uart_tx
 CAN_RX => CAN_RX.IN1
-CAN_TX << can_top:u_can_top.can_tx
+CAN_TX <= can_top:u_can_top.can_tx
 
 
 |fpga_top|can_top:u_can_top
