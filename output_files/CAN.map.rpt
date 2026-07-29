@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CAN
-Mon Jul 20 15:34:56 2026
+Wed Jul 29 10:39:35 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 20 15:34:56 2026       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 29 10:39:35 2026       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; CAN                                         ;
 ; Top-level Entity Name              ; fpga_top                                    ;
@@ -188,11 +188,11 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
-; FPGA/uart_tx.v                   ; yes             ; User Verilog HDL File        ; D:/Project/FPGA/CAN_test2/FPGA/uart_tx.v                             ;         ;
-; FPGA/fpga_top.v                  ; yes             ; User Verilog HDL File        ; D:/Project/FPGA/CAN_test2/FPGA/fpga_top.v                            ;         ;
-; RTL/can_top.v                    ; yes             ; User Verilog HDL File        ; D:/Project/FPGA/CAN_test2/RTL/can_top.v                              ;         ;
-; RTL/can_level_packet.v           ; yes             ; User Verilog HDL File        ; D:/Project/FPGA/CAN_test2/RTL/can_level_packet.v                     ;         ;
-; RTL/can_level_bit.v              ; yes             ; User Verilog HDL File        ; D:/Project/FPGA/CAN_test2/RTL/can_level_bit.v                        ;         ;
+; FPGA/uart_tx.v                   ; yes             ; User Verilog HDL File        ; D:/Project/Work/FPGA/FPGA/uart_tx.v                                  ;         ;
+; FPGA/fpga_top.v                  ; yes             ; User Verilog HDL File        ; D:/Project/Work/FPGA/FPGA/fpga_top.v                                 ;         ;
+; RTL/can_top.v                    ; yes             ; User Verilog HDL File        ; D:/Project/Work/FPGA/RTL/can_top.v                                   ;         ;
+; RTL/can_level_packet.v           ; yes             ; User Verilog HDL File        ; D:/Project/Work/FPGA/RTL/can_level_packet.v                          ;         ;
+; RTL/can_level_bit.v              ; yes             ; User Verilog HDL File        ; D:/Project/Work/FPGA/RTL/can_level_bit.v                             ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -202,8 +202,8 @@ applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_i2h1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Project/FPGA/CAN_test2/db/altsyncram_i2h1.tdf                     ;         ;
-; db/altsyncram_i5h1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Project/FPGA/CAN_test2/db/altsyncram_i5h1.tdf                     ;         ;
+; db/altsyncram_i2h1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Project/Work/FPGA/db/altsyncram_i2h1.tdf                          ;         ;
+; db/altsyncram_i5h1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Project/Work/FPGA/db/altsyncram_i5h1.tdf                          ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -761,7 +761,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Jul 20 15:34:54 2026
+    Info: Processing started: Wed Jul 29 10:39:33 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CAN -c CAN
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fpga/uart_tx.v
@@ -877,7 +877,7 @@ Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file D:/Project/FPGA/CAN_test2/output_files/CAN.map.smsg
+Info (144001): Generated suppressed messages file D:/Project/Work/FPGA/output_files/CAN.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 1473 device resources after synthesis - the final resource count might be different
@@ -886,8 +886,8 @@ Info (21057): Implemented 1473 device resources after synthesis - the final reso
     Info (21061): Implemented 1397 logic cells
     Info (21064): Implemented 72 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4962 megabytes
-    Info: Processing ended: Mon Jul 20 15:34:56 2026
+    Info: Peak virtual memory: 4971 megabytes
+    Info: Processing ended: Wed Jul 29 10:39:35 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -895,6 +895,6 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Project/FPGA/CAN_test2/output_files/CAN.map.smsg.
+The suppressed messages can be found in D:/Project/Work/FPGA/output_files/CAN.map.smsg.
 
 
