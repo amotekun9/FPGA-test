@@ -26,6 +26,7 @@ module main(clk,rst,sel,seg,key,buzzer,led,uart_rx,uart_tx);
  
  
  
+
  
 clock(clk,rst,sel,seg,key);
 beep(clk,rst,led[2:0],1,buzzer);
